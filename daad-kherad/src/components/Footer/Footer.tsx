@@ -1,18 +1,20 @@
 "use client";
 
+import { Image } from "antd";
 import { ArrowUpIcon, ScaleLogo } from "../icons";
 import styles from "./Footer.module.css";
+import Logo from "../../../public/images/logo.png"
 
 // Links are display-only for now; fill in the real hrefs later.
 const COLUMNS = [
-  { title: "دادرای", links: ["درباره ما", "خدمات دادرای", "تماس با ما", "سوالات متداول", "راهنمای مسیر حقوقی"] },
+  { title: "دادخرد", links: ["درباره ما", "خدمات دادخرد", "تماس با ما", "سوالات متداول", "راهنمای پژوهش "] },
   {
     title: "برای کاربران",
-    links: ["شروع مسیر حقوقی", "دریافت متن حقوقی", "درخواست وکیل", "مشاوره حقوقی", "حساب کاربری"],
+    links: ["شروع پژوهش", "طرح مسئله فلسفی", "بررسی و نقد استدلال", "راهنمای هوشمند", "حساب کاربری"],
   },
   {
     title: "برای همکاران",
-    links: ["ورود همکار", "ثبت نام وکلا", "تکمیل پروفایل", "درخواست های کاربران", "راهنمای همکاری"],
+    links: ["ورود همکار", "ثبت نام پژوهشگر", "تکمیل پروفایل", "درخواست های پژوهشی", "راهنمای همکاری"],
   },
   { title: "پشتیبانی", links: ["سوالات متداول", "راهنمای استفاده", "شرایط و قوانین", "حریم خصوصی", "تماس با پشتیبانی"] },
 ];
@@ -33,13 +35,16 @@ export default function Footer() {
         <div className={styles.top}>
           <div className={styles.brand}>
             <div className={styles.logo}>
-              <ScaleLogo className={styles.logoMark} />
-              <span>دادرای</span>
+              <div className="w-15 h-15 rounded-2xl bg-[#465C49] flex justify-center items-center">
+                <Image preview={false} src={Logo.src} />
+              </div>
+              <span className="text-[#005034]">دادخرد</span>
             </div>
-            <p className={styles.tagline}>دادرای فقط یک سامانه حقوقی نیست</p>
+            <p className={styles.tagline}>
+              دادخرد فقط یک سامانه فلسفی نیست
+            </p>
             <p className={styles.about}>
-              فضایی برای شناخت مسئله، پیدا کردن مسیر درست و رسیدن به اقدام حقوقی مناسب است.در دادرای، کاربر بدون نیاز به
-              دانستن اصطلاحات حقوقی، مرحله‌به‌مرحله به متن حقوقی، مشاوره یا وکیل مناسب هدایت می‌شود.
+              فضایی برای اندیشیدن، پرسشگری، نقد و گفت‌وگو در دنیای منطق، فلسفه و عرفان است. اینجا می‌توانی با کمک هوش مصنوعی، مسائل فلسفی را تحلیل کنی، استدلال‌ها را بررسی کنی، دیدگاه فیلسوفان و مکاتب مختلف را مقایسه کنی و با دسترسی به منابع معتبر، مسیر پژوهش و تفکر خود را گسترش دهی.
             </p>
           </div>
 
@@ -59,7 +64,7 @@ export default function Footer() {
 
         <div className={styles.bottom}>
           <p className={styles.copy}>
-            ©1405 دادرای
+            ©1405 دادخرد
             <br />
             تمامی حقوق محفوظ است.
           </p>

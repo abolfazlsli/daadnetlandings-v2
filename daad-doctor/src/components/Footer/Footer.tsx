@@ -1,18 +1,20 @@
 "use client";
 
+import { Image } from "antd";
 import { ArrowUpIcon, ScaleLogo } from "../icons";
 import styles from "./Footer.module.css";
+import Logo from "../../../public/images/logo.png"
 
 // Links are display-only for now; fill in the real hrefs later.
 const COLUMNS = [
-  { title: "دادرای", links: ["درباره ما", "خدمات دادرای", "تماس با ما", "سوالات متداول", "راهنمای مسیر حقوقی"] },
+  { title: "داددکتر", links: ["درباره ما", "خدمات دادرای", "تماس با ما", "سوالات متداول", "راهنمای مسیر حقوقی"] },
   {
-    title: "برای کاربران",
-    links: ["شروع مسیر حقوقی", "دریافت متن حقوقی", "درخواست وکیل", "مشاوره حقوقی", "حساب کاربری"],
+    title: "برای بیماران",
+    links: ["گرفتن نسخه", "درخواست پزشک", "پرسش از پزشک", "نوبت‌ها و پیگیری", "راهنمای هوشمند"],
   },
   {
-    title: "برای همکاران",
-    links: ["ورود همکار", "ثبت نام وکلا", "تکمیل پروفایل", "درخواست های کاربران", "راهنمای همکاری"],
+    title: "برای پزشکان",
+    links: ["ورود پزشک", "شرایط همکاری", "راهنمای ثبت‌نام", "مدارک لازم برای ثبت‌نام", "درخواست همکاری"],
   },
   { title: "پشتیبانی", links: ["سوالات متداول", "راهنمای استفاده", "شرایط و قوانین", "حریم خصوصی", "تماس با پشتیبانی"] },
 ];
@@ -33,8 +35,8 @@ export default function Footer() {
         <div className={styles.top}>
           <div className={styles.brand}>
             <div className={styles.logo}>
-              <ScaleLogo className={styles.logoMark} />
-              <span>داددکتر</span>
+              <Image preview={false} src={Logo.src} />
+              <span className="text-white">داددکتر</span>
             </div>
             <p className={styles.tagline}>علائمت را بگو، راهنمایی بگیر</p>
             <p className={styles.about}>

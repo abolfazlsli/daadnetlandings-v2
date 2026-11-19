@@ -10,9 +10,9 @@ type Feature = {
 };
 
 const FEATURES: Feature[] = [
-  { title: "تمام خدمات حقوقی در یک بستر", description: "متن، وکیل و مشاوره", Icon: LayersIcon },
-  { title: "راهنمایی مرحله ای", description: "با کمک هوش مصنوعی مراحل را رد کنید", Icon: BookIcon, lowered: true },
-  { title: "مسیر ساده تر", description: "بدون پیچیدگی و اصطلاحات دشوار", Icon: BoltIcon },
+  { title: "تحلیل متناسب با پرسش تو", description: "اندیشه فیلسوفان و مکاتب مختلف را بدون پیش‌داوری مقایسه کن.", Icon: LayersIcon },
+  { title: "راهنمایی مرحله ای", description: "از طرح پرسش تا تحلیل و یافتن منابع، قدم‌به‌قدم پیش برو.", Icon: BookIcon, lowered: true },
+  { title: "بررسی دیدگاه‌های گوناگون", description: "پرسش‌هایت را مطرح کن و استدلال‌ها را با نگاهی منطقی بررسی کن.", Icon: BoltIcon },
 ];
 
 export default function WhyUs() {
@@ -22,9 +22,9 @@ export default function WhyUs() {
         <div className={styles.wrap}>
           <span className={styles.sand} aria-hidden />
           <div className={styles.panel}>
-            <h2 className={styles.heading}>چرا دادمهاجر ؟</h2>
+            <h2 className={styles.heading}>چرا دادخرد ؟</h2>
             <p className={styles.lead}>
-             ما می‌دانیم زندگی در کشوری دیگر همیشه آسان نیست. دادمهاجر کنار شماست تا برای آموزش فرزندانتان، بیمه، درمان و حمایت‌های معیشتی، مسیر ساده‌تری پیش رو داشته باشید. اینجا تلاش می‌کنیم دغدغه‌هایتان را بشنویم، راهنمایی‌تان کنیم و تا پیگیری درخواست‌ها همراهتان باشیم.
+                دادخرد فضایی برای اندیشیدن، نقد و گفت‌وگو در دنیای منطق، فلسفه و عرفان است. اینجا می‌توانی با کمک هوش مصنوعی، استدلال‌ها را بررسی کنی، دیدگاه فیلسوفان را مقایسه کنی و با دسترسی به منابع معتبر، عمیق‌تر بیندیشی.
             </p>
           </div>
           <div className={styles.cards}>

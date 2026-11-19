@@ -20,24 +20,24 @@ type Service = {
 
 const SERVICES: Service[] = [
   {
-    title: "دریافت متن",
-    description: "دادخواست، لایحه و شکوائیه متناسب با موضوع شما",
-    cta: "دریافت متن",
+    title: "طرح و تحلیل مسئله",
+    description: "پرسش خود را موضوعی طرح کنید و مسیر تحلیل آن را دنبال کنید",
+    cta: "طرح مسئله",
     image: documentImg,
     Icon: DocumentIcon,
   },
   {
-    title: "درخواست وکیل",
-    description: "برای انجام یا پیگیری پرونده، درخواست وکیل ثبت کنید",
-    cta: "درخواست وکیل",
+    title: "بررسی و نقد استدلال",
+    description: "مقدمات، نتیجه و پیوندهای منطقی استدلال را بررسی کنید",
+    cta: "بررسی استدلال",
     image: lawyerImg,
     Icon: LawyerIcon,
     featured: true,
   },
   {
-    title: "مشاوره هوشمند",
-    description: "پرسش حقوقی تان را مطرح کنید و راهنمایی کارشناس و یا هوشمند بگیرید",
-    cta: "شروع مشاوره",
+    title: "مقایسه دیدگاه ها",
+    description: "آرای فیلسوفان و مکاتب را در کنارهم و با رجوع به منابع بسنجید",
+    cta: "مقایسه آرا",
     image: consultImg,
     Icon: ChatIcon,
   },
@@ -47,7 +47,7 @@ export default function Services() {
   return (
     <section id="services" className={styles.section}>
       <div className="shell">
-        <h2 className={styles.heading}>خدمات دادمهاجر</h2>
+        <h2 className={styles.heading}>خدمات دادخرد</h2>
         <div className={styles.grid}>
           {SERVICES.map((items , key) => (
               <ServicesCarts {...items} key={key} />

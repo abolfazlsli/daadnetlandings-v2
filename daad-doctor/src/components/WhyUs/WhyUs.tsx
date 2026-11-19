@@ -10,9 +10,9 @@ type Feature = {
 };
 
 const FEATURES: Feature[] = [
-  { title: "تمام خدمات حقوقی در یک بستر", description: "متن، وکیل و مشاوره", Icon: LayersIcon },
-  { title: "راهنمایی مرحله ای", description: "با کمک هوش مصنوعی مراحل را رد کنید", Icon: BookIcon, lowered: true },
-  { title: "مسیر ساده تر", description: "بدون پیچیدگی و اصطلاحات دشوار", Icon: BoltIcon },
+  { title: "راهنمایی متناسب با علائم تو", description: "به‌جای جست‌وجو میان جواب‌های مختلف، با پاسخ به سؤال‌های مرتبط راهنمایی متناسب دریافت کن.", Icon: LayersIcon },
+  { title: "قدم‌به‌قدم و قابل‌فهم", description: "از بیان علائم تا دریافت نتیجه بررسی، بدون نیاز به دانستن اصطلاحات پزشکی پیش برو.", Icon: BookIcon, lowered: true },
+  { title: "همراهی هوش مصنوعی و پزشک", description: "از راهنمایی هوشمند استفاده کن و در صورت نیاز، بررسی تخصصی را با پزشک ادامه بده.", Icon: BoltIcon },
 ];
 
 export default function WhyUs() {

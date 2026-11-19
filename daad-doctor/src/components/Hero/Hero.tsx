@@ -22,7 +22,7 @@ export default function Hero() {
                 <Image src={Logo.src} alt="logo" width={50} height={50} />
               </div>
               <a href="#" className={styles.logo}>
-                دادخرد
+                داددکتر
               </a>
             </div>
             <ul className={styles.links}>
