@@ -1,0 +1,228 @@
+.hero {
+  background: linear-gradient(90deg, #087EBA 0%, #087EBA 45%, #043954 100%);
+  color: var(--white);
+  padding-bottom: 96px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.logo {
+  color: var(--white);
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.links {
+  display: flex;
+  gap: 64px;
+  list-style: none;
+  margin: 0 0 0 0;
+  padding: 0 64px 0 0;
+}
+
+.links a {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.95;
+  transition: opacity 0.2s;
+}
+
+.links a:hover {
+  opacity: 0.7;
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.bell {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 0;
+  background: var(--white);
+  color: var(--ink);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.authBtn {
+  height: 46px;
+  width: 168px;
+  border-radius: 10px;
+  border: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 64px;
+}
+
+.copy {
+  max-width: 600px;
+}
+
+.kicker {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.title {
+  margin-top: 22px;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.75;
+}
+
+.lead {
+  margin-top: 22px;
+  max-width: 440px;
+  font-size: 16px;
+  line-height: 1.95;
+  color: #E3FFE2;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  margin-top: 36px;
+}
+
+.primaryBtn {
+  height: 58px;
+  width: 224px;
+  border: 0;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.ghostLink {
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 22px;
+  font-weight: 800;
+  transition: gap 0.2s;
+}
+
+.ghostLink:hover {
+  gap: 26px;
+}
+
+.visual {
+  position: relative;
+  width: 600px;
+  flex-shrink: 0;
+  margin-inline-start: 0;
+  margin-left: 0;
+  transform: translateX(-24px);
+}
+
+.halo {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  top: 20px;
+  left: 30px;
+}
+
+.scale {
+  position: relative;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 30px 30px rgba(0, 18, 45, 0.45));
+}
+
+@media (max-width: 1100px) {
+  .links {
+    gap: 32px;
+    padding: 0;
+  }
+  .visual {
+    width: 440px;
+  }
+  .halo {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 860px) {
+  .links {
+    display: none;
+  }
+  .body {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .copy {
+    max-width: none;
+  }
+  .lead {
+    margin-inline: auto;
+  }
+  .actions {
+    justify-content: center;
+    gap: 32px;
+  }
+  .visual {
+    width: min(100%, 420px);
+    transform: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .logo {
+    font-size: 28px;
+  }
+  .authBtn {
+    width: auto;
+    padding-inline: 16px;
+  }
+  .kicker {
+    font-size: 22px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .actions {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .primaryBtn {
+    width: 100%;
+  }
+  .halo {
+    width: 180px;
+    height: 180px;
+  }
+}

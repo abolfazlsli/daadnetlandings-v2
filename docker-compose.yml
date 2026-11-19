@@ -1,0 +1,34 @@
+services:
+  daad-ray:
+    build:
+      context: ./daad-ray
+    container_name: daad-ray
+    restart: unless-stopped
+    ports:
+      - "3010:3010"
+    networks:
+      - daads
+
+  daad-kar:
+    build:
+      context: ./daad-kar
+    container_name: daad-kar
+    restart: unless-stopped
+    ports:
+      - "3011:3011"
+    networks:
+      - daads
+
+  daad-payam:
+    build:
+      context: ./daad-payam
+    container_name: daad-payam
+    restart: unless-stopped
+    ports:
+      - "3012:3012"
+    networks:
+      - daads
+
+networks:
+  daads:
+    driver: bridge

@@ -1,0 +1,54 @@
+@layer theme, base, antd, components, utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #fb0200;
+  --color-coral: #fd7877;
+  --color-blush: #ffd3d3;
+  --color-charcoal: #303030;
+  --color-graphite: #3b3b3b;
+  --color-chip: #ededed;
+  --color-tile: #eeeeee;
+  --color-hash: #0e4a63;
+  --color-link: #0a66ff;
+  --color-surface: #f6f6f6;
+  --color-ink: #181818;
+  --color-muted: #555555;
+  --color-line: #dcdcdc;
+  --color-badge: #efeff9;
+  --font-sans: "Vazirmatn Variable", Vazirmatn, Tahoma, sans-serif;
+}
+
+
+a {
+  color: white !important;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+}
+
+/* antd's App sets a link colour inside @layer antd; this layer comes after it */
+@layer components {
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+}
+
+@utility shell {
+  width: 100%;
+  max-width: 1312px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}

@@ -1,0 +1,7 @@
+node_modules
+.next
+ui
+Dockerfile
+.dockerignore
+*.tsbuildinfo
+.git

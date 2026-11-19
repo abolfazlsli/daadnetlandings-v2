@@ -1,0 +1,136 @@
+.section {
+  background: #027942;
+  /* linear-gradient(225deg, #0156a3 0%, #014d93 25%, #01386e 60%, #01284c 100%); */
+  color: var(--white);
+  padding: 72px 0 56px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.copy {
+  max-width: 580px;
+  padding-top: 16px;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.75;
+}
+
+.mark {
+  background: var(--lemon);
+  color: var(--ink);
+  padding: 2px 6px;
+}
+
+.question {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.text {
+  margin-top: 26px;
+  font-size: 22px;
+  line-height: 1.9;
+}
+
+.arrow {
+  display: block;
+  width: 170px;
+  margin-top: 56px;
+  margin-inline-start: 220px;
+  color: var(--white);
+}
+
+.card {
+  width: 778px;
+  max-width: 100%;
+  background: var(--white);
+  color: var(--ink);
+  border-radius: 28px;
+  padding: 26px 20px 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.formTitle {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.formTitle span {
+  color: #055E5C !important;
+}
+
+.form {
+  margin-top: 34px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+
+.input {
+  height: 52px;
+  border-radius: 12px;
+  border-width: 1.5px;
+}
+
+.textarea:global(.ant-input) {
+  height: 304px;
+  resize: none;
+  border-radius: 14px;
+  border-width: 1.5px;
+  padding: 16px 20px;
+}
+
+.submit {
+  display: flex;
+  margin: 0 auto;
+  width: 178px;
+  height: 48px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 14px;
+  box-shadow: none;
+  background-color: #055E5C !important;
+}
+
+@media (max-width: 1100px) {
+  .inner {
+    flex-direction: column;
+  }
+  .copy {
+    max-width: none;
+  }
+  .arrow {
+    display: none;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 26px;
+  }
+  .question,
+  .text {
+    font-size: 17px;
+  }
+  .row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .textarea:global(.ant-input) {
+    height: 200px;
+  }
+}

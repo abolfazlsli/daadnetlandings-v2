@@ -1,0 +1,84 @@
+@layer theme, base, antd, components, utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #003668;
+  --color-navy-text: #01386e;
+  --color-navy-light: #00488a;
+  --color-navy-card: #004686;
+  --color-navy-deep: #01284c;
+  --color-sky: #1692fa;
+  --color-forest: #003d38;
+  --color-slate: #039652;
+  --color-amber: #ffbb00;
+  --color-lemon: #ffea00;
+  --color-sand: #f6e2c1;
+  --color-surface: #f6f6f6;
+  --color-ink: #181818;
+  --color-muted: #5b5b5b;
+  --color-line: #d0d0d0;
+  --color-badge: #efeff9;
+  --font-sans: "Vazirmatn Variable", Vazirmatn, Tahoma, sans-serif;
+}
+
+:root {
+  --navy: #003668;
+  --navy-text: #01386e;
+  --navy-light: #00488a;
+  --navy-card: #004686;
+  --navy-deep: #01284c;
+  --sky: #1692fa;
+  --forest: #003d38;
+  --slate: #0172BA;
+  --amber: #ffbb00;
+  --lemon: #ffea00;
+  --sand: #f6e2c1;
+  --surface: #F3FCFF;
+  --white: #ffffff;
+  --ink: #181818;
+  --muted: #5b5b5b;
+  --line: #d0d0d0;
+  --badge: #efeff9;
+  --container: 1280px;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--surface);
+    color: var(--ink);
+    font-family: "Vazirmatn Variable", Vazirmatn, Tahoma, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin: 0;
+  }
+}
+
+@utility shell {
+  width: 100%;
+  max-width: calc(var(--container) + 32px);
+  margin-inline: auto;
+  padding-inline: 16px;
+}
